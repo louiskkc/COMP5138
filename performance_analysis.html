@@ -1,0 +1,287 @@
+ <head>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  </head>
+  <title>Performance Analysis</title>
+  <body>
+          
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="center hide-on-med-and-down">
+        <li><a href="performance_analysis.html">Performace Analysis</a></li>
+        <li><a href="#employee">Employees</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <table border="1" cellpadding="3" class="highlight col s12 m4 l2">
+<tr>
+  <th colspan="6" class="center">Timed statistics (Re-engineering)</th>
+</tr>
+<tr>
+  <th> Name </th>
+  <th> Count </th>
+  <th> Sum </th>
+  <th> Avrg </th>
+  <th> Min </th>
+  <th> Max </th>
+
+</tr>
+<tr>
+  <td>Complaint_Flow_Time</td>
+  <td> 31 </td>
+  <td> 165420 </td>
+  <td> 293.265957 </td>
+  <td> 56 </td>
+  <td> 531 </td>
+ </tr>
+<tr>
+  <td>List_length_dc_Complaint_System'Complaint_to_Check_1</td>
+  <td> 289 </td>
+  <td> 81677 </td>
+  <td> 131.737097 </td>
+  <td> 0 </td>
+  <td> 177 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'Free_1</td>
+  <td> 173 </td>
+  <td> 0 </td>
+  <td> 0.000000 </td>
+  <td> 0 </td>
+  <td> 2 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'in_Checking_1</td>
+  <td> 173 </td>
+  <td> 1240 </td>
+  <td> 2.000000 </td>
+  <td> 0 </td>
+  <td> 2 </td>
+ </tr>
+<tr>
+  <td>Measure_Queue</td>
+  <td> 86 </td>
+  <td> 169260 </td>
+  <td> 273.000000 </td>
+  <td> 0 </td>
+  <td> 550 </td>
+ </tr>
+<tr>
+  <td>Refund_Flow_Time</td>
+  <td> 31 </td>
+  <td> 164660 </td>
+  <td> 270.822368 </td>
+  <td> 12 </td>
+  <td> 543 </td>
+ </tr>
+
+</table>
+
+<p>Simulation steps executed: 1000<br />
+Model time: 620</p>
+        
+<table border="1" cellpadding="3" class="highlight">
+<tr>
+  <th colspan="6" class="center">Timed statistics (Origin)</th>
+</tr>
+<tr>
+  <th> Name </th>
+  <th> Count </th>
+  <th> Sum </th>
+  <th> Avrg </th>
+  <th> Min </th>
+  <th> Max </th>
+
+</tr>
+<tr>
+  <td>Complaint_Flow_Time</td>
+  <td> 68 </td>
+  <td> 4566508 </td>
+  <td> 1491.348138 </td>
+  <td> 73 </td>
+  <td> 2985 </td>
+ </tr>
+<tr>
+  <td>List_length_dc_Complaint_System'Complaint_to_Check_1</td>
+  <td> 859 </td>
+  <td> 292743 </td>
+  <td> 93.230255 </td>
+  <td> 0 </td>
+  <td> 192 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'Free_1</td>
+  <td> 859 </td>
+  <td> 50 </td>
+  <td> 0.015924 </td>
+  <td> 0 </td>
+  <td> 2 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'in_Checking_1</td>
+  <td> 859 </td>
+  <td> 6230 </td>
+  <td> 1.984076 </td>
+  <td> 0 </td>
+  <td> 2 </td>
+ </tr>
+<tr>
+  <td>Measure_Queue</td>
+  <td> 426 </td>
+  <td> 4666466 </td>
+  <td> 1486.135669 </td>
+  <td> 0 </td>
+  <td> 3098 </td>
+ </tr>
+<tr>
+  <td>Refund_Flow_Time</td>
+  <td> 63 </td>
+  <td> 4535924 </td>
+  <td> 1451.960307 </td>
+  <td> 16 </td>
+  <td> 3120 </td>
+ </tr>
+
+</table>
+
+<p>
+Simulation steps executed: 2733<br />
+Model time: 3140</p>
+
+<table border="1" cellpadding="3" class="highlight" id="employee">
+<tr>
+  <th colspan="6" class="center">Timed statistics (10CS)</th>
+</tr>
+<tr>
+  <th> Name </th>
+  <th> Count </th>
+  <th> Sum </th>
+  <th> Avrg </th>
+  <th> Min </th>
+  <th> Max </th>
+
+</tr>
+<tr>
+  <td>Complaint_Flow_Time</td>
+  <td> 67 </td>
+  <td> 193134 </td>
+  <td> 271.255618 </td>
+  <td> 16 </td>
+  <td> 596 </td>
+ </tr>
+<tr>
+  <td>List_length_dc_Complaint_System'Complaint_to_Check_1</td>
+  <td> 859 </td>
+  <td> 45592 </td>
+  <td> 62.626374 </td>
+  <td> 0 </td>
+  <td> 147 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'Free_1</td>
+  <td> 859 </td>
+  <td> 696 </td>
+  <td> 0.956044 </td>
+  <td> 0 </td>
+  <td> 10 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'in_Checking_1</td>
+  <td> 859 </td>
+  <td> 6584 </td>
+  <td> 9.043956 </td>
+  <td> 0 </td>
+  <td> 10 </td>
+ </tr>
+<tr>
+  <td>Measure_Queue</td>
+  <td> 426 </td>
+  <td> 203016 </td>
+  <td> 278.868132 </td>
+  <td> 0 </td>
+  <td> 617 </td>
+ </tr>
+<tr>
+  <td>Refund_Flow_Time</td>
+  <td> 63 </td>
+  <td> 4535924 </td>
+  <td> 281.064246 </td>
+  <td> 12 </td>
+  <td> 566 </td>
+ </tr>
+ </table>
+
+ <p>Simulation steps executed: 2733<br />
+Model time: 728</p>
+
+<table border="1" cellpadding="3" class="highlight">
+<tr>
+  <th colspan="6" class="center">Timed statistics (5CS)</th>
+</tr>
+<tr>
+  <th> Name </th>
+  <th> Count </th>
+  <th> Sum </th>
+  <th> Avrg </th>
+  <th> Min </th>
+  <th> Max </th>
+
+</tr>
+<tr>
+  <td>Complaint_Flow_Time</td>
+  <td> 55 </td>
+  <td> 774816 </td>
+  <td> 579.952096 </td>
+  <td> 12 </td>
+  <td> 1288 </td>
+ </tr>
+<tr>
+  <td>List_length_dc_Complaint_System'Complaint_to_Check_1</td>
+  <td> 859 </td>
+  <td> 112109 </td>
+  <td> 83.1660914 </td>
+  <td> 0 </td>
+  <td> 174 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'Free_1</td>
+  <td> 859 </td>
+  <td> 236 </td>
+  <td> 0.175094 </td>
+  <td> 0 </td>
+  <td> 5 </td>
+ </tr>
+<tr>
+  <td>Marking_size_Complaint_System'in_Checking_1</td>
+  <td> 859 </td>
+  <td> 4.824926 </td>
+  <td> 4.824926 </td>
+  <td> 0 </td>
+  <td> 5 </td>
+ </tr>
+<tr>
+  <td>Measure_Queue</td>
+  <td> 426 </td>
+  <td> 798264 </td>
+  <td> 592.183976 </td>
+  <td> 0 </td>
+  <td> 1272 </td>
+ </tr>
+<tr>
+  <td>Refund_Flow_Time</td>
+  <td> 74 </td>
+  <td> 778796 </td>
+  <td> 584.681682 </td>
+  <td> 16 </td>
+  <td> 1241 </td>
+ </tr>
+ </table>
+
+ <p>Simulation steps executed: 2733<br />
+Model time: 1348</p>
+
+  </body>
